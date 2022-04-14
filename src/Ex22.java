@@ -1,14 +1,15 @@
 public class Ex22 {
-    public static void main(String[] args) {
-        int Seconds = 0 ;
-	    int Minutes = 0 ;                                 
-	    int Hours = 0 ;
+	public static void main(String[] args) {
+		int tempoTotal = 86399;
+		int minutos;
+		int horas;
+		int segundos;
 
-	    if ( Seconds>=60 )  Minutes = Minutes+1 ;
-	    if ( Minutes > 0 )   Seconds = Seconds-60 ;
-	    if ( Minutes>=60) Hours = Hours+1 ;                
-	    if (Hours >0) Minutes=Minutes-60; 
+		minutos = (int) (tempoTotal) / 60;
+		segundos = tempoTotal % 60;
+		horas = (int) minutos / 60;
+		minutos = minutos % 60;
 
-	    System.out.printf("O número de horas é %d, de minutos é %d e de segundos é %d",Hours, Minutes, Seconds) ;
+		System.err.println(horas + ":" + minutos + ":" + segundos);
+	}
 }
-    }
