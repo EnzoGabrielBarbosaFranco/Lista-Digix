@@ -14,4 +14,4 @@ public class Ex25 {
             System.out.println(i + ",");
         }
     }
-}
+} 
