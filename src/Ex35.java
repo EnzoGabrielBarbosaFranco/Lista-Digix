@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class Ex35 {
     public static void main(String[] args) {
-        Scanner ler = new Scanner(System.in);
+        try (Scanner ler = new Scanner(System.in)) {
+        }
         
         double salarioMinimo = 788;
         double salarioRecebido = 11032 ;

@@ -4,7 +4,8 @@ import javax.swing.JOptionPane;
 
 public class Ex36 {
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
+        try (Scanner leitor = new Scanner(System.in)) {
+        }
         String a = "";
         int num = 0;
         int sucessor = 0;
